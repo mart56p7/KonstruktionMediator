@@ -13,11 +13,12 @@ public class Spagetti {
     private JFrame frame = null;
     private ImgPanel panel = null;
     private JButton button = null;
-    BufferedImage on, off;
+    private BufferedImage on = null;
+    private BufferedImage off = null;
     private final String  pathtofiles = "c:\\images\\";
 
     public Spagetti() {
-        frame = new JFrame("My Application");
+        frame = new JFrame("Spagetti application");
         frame.setResizable(false);
         frame.setSize(571, 900);
         frame.setLayout(new FlowLayout());
@@ -57,10 +58,12 @@ public class Spagetti {
         button.setText("I got an idea");
         button.addActionListener(
                 new ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent e) {
                         if(button.getText().equals("I got an idea")){
                             panel.setImage(on);
                             button.setText("Im out of ideas");
+                            (new Thread(new Muse(panel, button, off, "I got an idea"))).start();
                         }
                         else{
                             panel.setImage(off);
@@ -73,6 +76,7 @@ public class Spagetti {
         frame.setVisible(true);
         button.setVisible(true);
         panel.setVisible(true);
+        frame.repaint();
     }
 
     public static void main(String[] args) {

@@ -1,0 +1,19 @@
+Facade:
+https://en.wikipedia.org/wiki/Facade_pattern
+
+
+Mediator (Behavioral patterns)
+
+
+Structural patterns
+A structural design pattern serves as a blueprint for how different classes and objects are combined to form larger structures. Unlike creational patterns, which are mostly different ways to fulfill the same fundamental purpose, each structural pattern has a different purpose.
+Question: What unifies structural patterns?
+Answer: They all involve connections between objects.
+In some sense, structural patterns are similar to the simpler concept of data structures.
+
+Ref: https://www.gofpatterns.com/design-patterns/module5/structural-design-pattern.php
+
+Behavioral patterns
+Some of these patterns describe how a group of peer objects cooperate to perform a task that no single object can carry out by itself. An important issue here is how peer objects know about each other. Peers could maintain explicit references to each other, but that would increase their coupling. In the extreme, every object would know about every other. The Mediator pattern avoids this by introducing a mediator object between peers. The mediator provides the indirection needed for loose coupling. 
+
+Ref: https://www.gofpatterns.com/design-patterns/module6/intro-behavioral-designPatterns.php
