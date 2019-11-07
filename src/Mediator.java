@@ -87,18 +87,7 @@ public class Mediator implements MediatorInterface {
         JButton button = new JButton();
         button.setBounds(35, 760, 500, 60);
         button.setText("I got an idea");
-        button.addActionListener(
-                new ActionListener() {
-                    public void actionPerformed(ActionEvent e) {
-                        if(button.getText().equals("I got an idea")){
-                            mediator.turnLightOn();
-                        }
-                        else{
-                            mediator.turnLightOff();
-                        }
-                    }
-                }
-        );
+        button.addActionListener(new MediatorActionListener(button, mediator));
         frame.add(button);
         mediator.setButton(button);
 
@@ -110,3 +99,21 @@ public class Mediator implements MediatorInterface {
     }
 }
 
+class MediatorActionListener implements ActionListener{
+    JButton button;
+    MediatorInterface mediator;
+
+    public MediatorActionListener(JButton button, MediatorInterface mediator){
+        this.button = button;
+        this.mediator = mediator;
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        if(button.getText().equals("I got an idea")){
+            mediator.turnLightOn();
+        }
+        else{
+            mediator.turnLightOff();
+        }
+    }
+}
