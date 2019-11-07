@@ -7,11 +7,11 @@ import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
 
 public class Mediator implements MediatorInterface {
+    //Aggregation
     private ImgPanel panel = null;
-
     private JButton button = null;
 
-
+    //Would have prefered dependency injection, but meh :)
     public Mediator() {
 
     }

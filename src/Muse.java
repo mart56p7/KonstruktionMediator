@@ -7,7 +7,7 @@ import java.sql.SQLOutput;
  * */
 class Muse implements Runnable{
     //Facade
-    private Facade mf = null;
+    private GUIFacade mf = null;
     //Mediator
     private MediatorInterface mediator = null;
     //Spagetti
@@ -17,16 +17,17 @@ class Muse implements Runnable{
     private JButton button = null;
     private String str = null;
 
-    public Muse(Facade f, JButton b, String str){
+    //Dependency injection - Aggregation
+    public Muse(GUIFacade f, JButton b, String str){
         this.mf = f;
         this.button = b;
         this.str = str;
     }
-
+    //Dependency injection - Aggregation
     public Muse(MediatorInterface m){
         this.mediator = m;
     }
-
+    //Dependency injection - Aggregation
     public Muse(ImgPanel ip, JButton button, BufferedImage bi, String str){
         this.ip = ip;
         this.button = button;

@@ -9,12 +9,18 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-public class Facade {
-    private MyFrame frame = null;
+/**
+ * Ref: https://en.wikipedia.org/wiki/Facade_pattern
+ * Ref: http://w3sdesign.com/?gr=s05&ugr=proble
+ * Ref: https://www.gofpatterns.com/structural-design-patterns/structural-patterns/facade-pattern.php
+ * */
+public class GUIFacade {
+    //Composition :)
+    private MyFrame frame = new MyFrame();
 
 
-    public Facade(MyFrame frame) {
-        this.frame = frame;
+    public GUIFacade() {
+
     }
 
     public void turnLightOn(){
@@ -27,9 +33,17 @@ public class Facade {
         //More methods could be called here
     }
 
+    public void addComponent(java.awt.Component c){
+        frame.add(c);
+        c.setVisible(true);
+        c.repaint();
+    }
+
     public static void main(String[] args) {
-        MyFrame frame = new MyFrame();
-        Facade facade = new Facade(frame);
+        GUIFacade facade = new GUIFacade();
+
+
+
         JButton button = new JButton();
         button.setBounds(35, 760, 500, 60);
         button.setText("I got an idea");
@@ -52,9 +66,8 @@ public class Facade {
                     }
                 }
         );
-        frame.add(button);
-        frame.repaint();
-        frame.turnLightOff();
+        facade.addComponent(button);
+        facade.turnLightOff();
 
     }
 }

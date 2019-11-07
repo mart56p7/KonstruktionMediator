@@ -9,6 +9,9 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * All classes call each other
+ * */
 public class Spagetti {
     private JFrame frame = null;
     private ImgPanel panel = null;
