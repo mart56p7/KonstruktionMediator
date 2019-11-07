@@ -4,19 +4,6 @@
     <list default="true" id="d0e4adaa-86d2-405a-9c05-4ba203a55018" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KonstruktionMediator/GUIFacade$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KonstruktionMediator/GUIFacade$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KonstruktionMediator/GUIFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KonstruktionMediator/GUIFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KonstruktionMediator/ImgPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KonstruktionMediator/ImgPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KonstruktionMediator/Mediator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KonstruktionMediator/Mediator$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KonstruktionMediator/Mediator$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KonstruktionMediator/Mediator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KonstruktionMediator/Mediator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KonstruktionMediator/Muse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KonstruktionMediator/Muse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KonstruktionMediator/MyFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KonstruktionMediator/MyFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KonstruktionMediator/MyFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KonstruktionMediator/MyFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KonstruktionMediator/Spagetti$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KonstruktionMediator/Spagetti$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KonstruktionMediator/Spagetti$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KonstruktionMediator/Spagetti$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KonstruktionMediator/Spagetti.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KonstruktionMediator/Spagetti.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mediator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +87,16 @@
         <item itemvalue="Application.Facade" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
