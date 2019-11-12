@@ -17,3 +17,5 @@ Behavioral patterns
 Some of these patterns describe how a group of peer objects cooperate to perform a task that no single object can carry out by itself. An important issue here is how peer objects know about each other. Peers could maintain explicit references to each other, but that would increase their coupling. In the extreme, every object would know about every other. The Mediator pattern avoids this by introducing a mediator object between peers. The mediator provides the indirection needed for loose coupling. 
 
 Ref: https://www.gofpatterns.com/design-patterns/module6/intro-behavioral-designPatterns.php
+
+https://docs.google.com/presentation/d/12mVl0TNPsEXyBamulabfWFLVhHHIJlDNwO1KyG-TzCk/edit?usp=sharing
